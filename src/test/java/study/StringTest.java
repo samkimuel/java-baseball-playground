@@ -19,4 +19,11 @@ public class StringTest {
 		assertThat(actual).contains("1");
 		assertThat(actual).containsExactly("1", "2");
 	}
+
+	@Test
+	void substring() {
+		String actual = "(1,2)".substring(1, 5);
+
+		assertThat(actual).contains("1,2");
+	}
 }
